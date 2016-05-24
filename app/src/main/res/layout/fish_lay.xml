@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_fish_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/eating_fish_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/eating_fish_loading_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/xlistview_loading_line" />
+
+
+        <ImageView
+            android:id="@+id/by_eat_fish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eating_fish_loading_line"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/fish_shark"
+            android:layout_toRightOf="@+id/fish_shark"
+            android:src="@mipmap/loading_fish" />
+
+        <ImageView
+            android:id="@+id/by_eat_fish2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eating_fish_loading_line"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:src="@mipmap/loading_fish2" />
+
+        <ImageView
+            android:id="@+id/fish_shark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eating_fish_loading_line"
+            android:layout_marginBottom="-10dp"
+            android:src="@mipmap/loading_shark" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recycler_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

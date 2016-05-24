@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerRefrseh</string>
+
+    <!--加载状态-->
+    <string name="recycler_loading">LOADING</string>
+    <string name="recycler_load_end">END</string>
+</resources>
